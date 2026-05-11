@@ -2,15 +2,18 @@ import json
 import os
 from racas_dEd import escolher_raca_dEd
 from racas_mordenkainen import escolher_raca_mordenkainen
+from livro import livro_lista_dEd, livro_racas_dEd, livro_mostrar_racas_dEd
 
 ficha = {}
+
+racas = livro_racas_dEd()
 
 def main():
         
     while True:
         try:
 
-            resposta = int(input("O que voce deseja fazer? (1- Criar uma nova ficha, 2- gerenciar fichas, 0- Sair): "))
+            resposta = int(input("O que voce deseja fazer? (1- Criar uma nova ficha, 2- gerenciar fichas, 3- Livro, 0- Sair): "))
 
             if resposta == 1:
                 while True:
@@ -116,6 +119,12 @@ def main():
                                     json.dump(ficha_aberta, Arquivo, ensure_ascii=False, indent=4)
 
                                 print("Ficha atualizada com sucesso.")
+
+            elif resposta == 3:
+                livro_main = int(input("Voce deseja ver o livro de (1- D&D, 2- MORDENKAINEN): "))
+
+                if livro_main == 1:
+                    livro_lista_dEd(ficha)
             elif resposta == 0:
                 print("saindo...")
                 print("")
