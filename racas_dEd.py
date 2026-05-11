@@ -1,10 +1,16 @@
+from livro import livro_racas_dEd, livro_mostrar_racas_dEd
+
 def escolher_raca_dEd(ficha):
 
-    dEd = int(input("Digite a raça de seu personagem (Use a pagina do livro como resposta, EX: 18 (Anão): "))
+    racas = livro_racas_dEd()
+
+    livro_mostrar_racas_dEd(racas)
+
+    dEd = int(input("Digite a raça de seu personagem (Use o numero da raça para ve-la. Ex: 1- Anão: "))
 
     match dEd:
 
-        case 18:
+        case 1:
             ficha["raca"] = "Anao"
             ficha["atributo da raça"] = "+2 Con"
             idade_anao = int(input("Qual a idade de seu personagem? (Max +- 350): "))
@@ -41,7 +47,7 @@ def escolher_raca_dEd(ficha):
                     ficha["atributo da subRaça"] = "For +2 e Prof. Armaduras leves"
                 ficha["SubRaça"] = f"{subraca_anao_personalizada}"
             print(f"Raça escolhida: [{dEd}] Anão")
-        case 21:
+        case 2:
             ficha["raca"] = "Elfo"
             ficha["atributo da raça"] = "+2 Des"
             idade_elfo = int(input("Qual a idade de seu personagem? (Max +- 750): "))
@@ -91,7 +97,7 @@ def escolher_raca_dEd(ficha):
                     ficha["Magia drow"] = "Você possui o truque globos de luz. Quando você alcança o 3° nível, você pode conjurar a magia fogo das fadas. Quando você alcança o 5° nível, você pode conjurar escuridão. Você precisa terminar um descanso longo para poder conjurar as magias desse traço novamente. Carisma é sua habilidade chave para conjurar essas magias"
                 ficha["SubRaça"] = f"{subraca_elfo_personalizada}"
             print(f"Raça escolhida: [{dEd}] Elfo")
-        case 26:
+        case 3:
             ficha["raca"] = "Halfling"
             ficha["atributo da raça"] = "+2 Des"
             idade_halfling = int(input("Qual a idade de seu personagem? (Max +- 150): "))
@@ -128,7 +134,7 @@ def escolher_raca_dEd(ficha):
                 ficha["SubRaça"] = f"{subraca_halfling_personalizada}"
             print(f"Raça escolhida: [{dEd}] Halfling")
 
-        case 29:
+        case 4:
             ficha["raca"] = "Humano"
             ficha["atributo da raça"] = "+1 em todos os atributos"
             idade_humano = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -144,7 +150,7 @@ def escolher_raca_dEd(ficha):
             ficha["especialista"] = "Humanos sao versateis e recebem +1 em todos os atributos"
             print(f"Raça escolhida: [{dEd}] Humano")
 
-        case 32:
+        case 5:
             ficha["raca"] = "Draconato"
             ficha["atributo da raça"] = "+2 For e +1 Car"
             idade_draconato = int(input("Qual a idade de seu personagem? (Max +- 80): "))
@@ -161,7 +167,7 @@ def escolher_raca_dEd(ficha):
             ficha["especialista"] = "Possui arma de sopro e resistencia ao tipo de dano da ancestralidade draconica"
             print(f"Raça escolhida: [{dEd}] Draconato")
 
-        case 35:
+        case 6:
             ficha["raca"] = "Gnomo"
             ficha["atributo da raça"] = "+2 Int"
             idade_gnomo = int(input("Qual a idade de seu personagem? (Max +- 500): "))
@@ -192,7 +198,7 @@ def escolher_raca_dEd(ficha):
                 ficha["SubRaça"] = f"{subraca_gnomo_personalizada}"
             print(f"Raça escolhida: [{dEd}] Gnomo")
 
-        case 38:
+        case 7:
             ficha["raca"] = "Meio-Elfo"
             ficha["atributo da raça"] = "+2 Car e +1 em dois atributos à escolha"
             idade_meio_elfo = int(input("Qual a idade de seu personagem? (Max +- 180): "))
@@ -208,7 +214,7 @@ def escolher_raca_dEd(ficha):
             ficha["especialista"] = "Vantagem contra ser enfeitiçado por magia e nao pode ser colocado para dormir magicamente"
             print(f"Raça escolhida: [{dEd}] Meio-Elfo")
 
-        case 40:
+        case 8:
             ficha["raca"] = "Meio-Orc"
             ficha["atributo da raça"] = "+2 For e +1 Con"
             idade_meio_orc = int(input("Qual a idade de seu personagem? (Max +- 75): "))
@@ -225,7 +231,7 @@ def escolher_raca_dEd(ficha):
             ficha["critico"] = "Ao causar acerto critico com ataque corpo a corpo, adiciona um dado extra de dano da arma"
             print(f"Raça escolhida: [{dEd}] Meio-Orc")
 
-        case 42:
+        case 9:
             ficha["raca"] = "Tiefling"
             ficha["atributo da raça"] = "+2 Car e +1 Int"
             idade_tiefling = int(input("Qual a idade de seu personagem? (Max +- 100): "))
