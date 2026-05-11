@@ -2,11 +2,14 @@ import json
 import os
 from racas_dEd import escolher_raca_dEd
 from racas_mordenkainen import escolher_raca_mordenkainen
-from livro import livro_lista_dEd, livro_racas_dEd, livro_mostrar_racas_dEd
+from livrodEd import livro_lista_dEd, livro_racas_dEd
+from livromordekainen import livro_lista_mordenkainen, livro_racas_mordenkainen
 
 ficha = {}
 
-racas = livro_racas_dEd()
+racasdEd = livro_racas_dEd()
+racasmordenkainen = livro_racas_mordenkainen()
+
 
 def main():
         
