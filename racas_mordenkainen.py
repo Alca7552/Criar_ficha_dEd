@@ -11,6 +11,7 @@ def escolher_raca_mordenkainen(ficha):
     match mordenkainen:
 
         case 1:
+            print(f"Raça escolhida: [{mordenkainen}] Aarakocra")
             ficha["raca"] = "Aarakocra"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_aarakocra = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -24,9 +25,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["voo"] = "Deslocamento de voo igual ao deslocamento de caminhada, mas nao pode usar armadura media ou pesada"
             ficha["especialista"] = "Garras causam 1d6 + For de dano cortante e pode conjurar lufada de vento a partir do nivel 3"
-            print(f"Raça escolhida: [{mordenkainen}] Aarakocra")
 
         case 2:
+            print(f"Raça escolhida: [{mordenkainen}] Aasimar")
             ficha["raca"] = "Aasimar"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_aasimar = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -39,9 +40,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_aasimar} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Resistencia a dano radiante e necrotico, maos curativas e revelacao celestial"
-            print(f"Raça escolhida: [{mordenkainen}] Aasimar")
 
         case 3:
+            print(f"Raça escolhida: [{mordenkainen}] Bugurso")
             ficha["raca"] = "Bugurso"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_bugurso = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -54,9 +55,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_bugurso} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Alcance maior em ataques corpo a corpo no seu turno, furtividade natural e dano extra contra alvo surpreso"
-            print(f"Raça escolhida: [{mordenkainen}] Bugurso")
 
         case 4:
+            print(f"Raça escolhida: [{mordenkainen}] Centauro")
             ficha["raca"] = "Centauro"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_centauro = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -70,9 +71,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "12 m"
             ficha["especialista"] = "Tipo feerico, cascos como ataque natural e investida"
             ficha["proficiencias"] = "Uma entre Adestrar Animais, Medicina, Natureza ou Sobrevivencia"
-            print(f"Raça escolhida: [{mordenkainen}] Centauro")
 
         case 5:
+            print(f"Raça escolhida: [{mordenkainen}] Duergar")
             ficha["raca"] = "Duergar"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_duergar = int(input("Qual a idade de seu personagem? (Max +- 350): "))
@@ -85,9 +86,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_duergar} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Visao no escuro superior, resistencia contra veneno, vantagem contra encantamento/atordoamento e magia duergar"
-            print(f"Raça escolhida: [{mordenkainen}] Duergar")
 
         case 6:
+            print(f"Raça escolhida: [{mordenkainen}] Duplicante")
             ficha["raca"] = "Duplicante"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_duplicante = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -101,9 +102,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Pode mudar aparencia, voz e forma corporal, mantendo o mesmo tipo basico de corpo"
             ficha["proficiencias"] = "Duas entre Enganação, Intuição, Intimidação e Persuasão"
-            print(f"Raça escolhida: [{mordenkainen}] Duplicante")
 
         case 7:
+            print(f"Raça escolhida: [{mordenkainen}] Eladrin")
             ficha["raca"] = "Eladrin"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_eladrin = int(input("Qual a idade de seu personagem? (Max +- 750): "))
@@ -116,9 +117,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_eladrin} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Ancestralidade feerica, transe e passo feerico ligado a estações"
-            print(f"Raça escolhida: [{mordenkainen}] Eladrin")
 
         case 8:
+            print(f"Raça escolhida: [{mordenkainen}] Elfo Marinho")
             ficha["raca"] = "Elfo Marinho"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_elfo_marinho = int(input("Qual a idade de seu personagem? (Max +- 750): "))
@@ -132,9 +133,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["nado"] = "9 m"
             ficha["especialista"] = "Respira ar e agua, resistencia a dano gelido, transe e comunicação limitada com feras aquaticas"
-            print(f"Raça escolhida: [{mordenkainen}] Elfo Marinho")
 
         case 9:
+            print(f"Raça escolhida: [{mordenkainen}] Fada")
             ficha["raca"] = "Fada"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_fada = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -148,9 +149,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["voo"] = "Deslocamento de voo igual ao deslocamento de caminhada, mas nao pode usar armadura media ou pesada"
             ficha["especialista"] = "Tipo feerico e magia de fada"
-            print(f"Raça escolhida: [{mordenkainen}] Fada")
 
         case 10:
+            print(f"Raça escolhida: [{mordenkainen}] Firbolg")
             ficha["raca"] = "Firbolg"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_firbolg = int(input("Qual a idade de seu personagem? (Max +- 500): "))
@@ -163,9 +164,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_firbolg} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Magia firbolg, passo oculto, fala com animais e plantas e corpo poderoso"
-            print(f"Raça escolhida: [{mordenkainen}] Firbolg")
 
         case 11:
+            print(f"Raça escolhida: [{mordenkainen}] Genasi")
             ficha["raca"] = "Genasi"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_genasi = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -191,9 +192,9 @@ def escolher_raca_mordenkainen(ficha):
             else:
                 ficha["SubRaça"] = "Genasi da Terra"
                 ficha["especialista"] = "Caminha por terreno dificil de terra/pedra com facilidade e possui magias de terra"
-            print(f"Raça escolhida: [{mordenkainen}] Genasi")
 
         case 12:
+            print(f"Raça escolhida: [{mordenkainen}] Githyanki")
             ficha["raca"] = "Githyanki"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_githyanki = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -206,9 +207,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_githyanki} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Conhecimento astral, resistencia psionica e magias githyanki"
-            print(f"Raça escolhida: [{mordenkainen}] Githyanki")
 
         case 13:
+            print(f"Raça escolhida: [{mordenkainen}] Githzerai")
             ficha["raca"] = "Githzerai"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_githzerai = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -221,8 +222,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_githzerai} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Disciplina mental, resistencia psiquica e magias githzerai"
-            print(f"Raça escolhida: [{mordenkainen}] Githzerai")
+
         case 14:
+            print(f"Raça escolhida: [{mordenkainen}] Goblin")
             ficha["raca"] = "Goblin"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_goblin = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -235,9 +237,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_goblin} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Tipo feerico, furia dos pequenos, pode esconder-se ou desengajar como ação bonus"
-            print(f"Raça escolhida: [{mordenkainen}] Goblin")
 
         case 15:
+            print(f"Raça escolhida: [{mordenkainen}] Golias")
             ficha["raca"] = "Golias"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_golias = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -251,9 +253,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Corpo poderoso, resistencia ao frio e pode reduzir dano recebido com resistencia de pedra"
             ficha["proficiencias"] = "Atletismo"
-            print(f"Raça escolhida: [{mordenkainen}] Golias")
 
         case 16:
+            print(f"Raça escolhida: [{mordenkainen}] Harengon")
             ficha["raca"] = "Harengon"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_harengon = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -267,9 +269,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Tipo feerico, bonus em iniciativa, salto de coelho e sentidos leporinos"
             ficha["proficiencias"] = "Percepção"
-            print(f"Raça escolhida: [{mordenkainen}] Harengon")
 
         case 17:
+            print(f"Raça escolhida: [{mordenkainen}] Hobgoblin")
             ficha["raca"] = "Hobgoblin"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_hobgoblin = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -282,9 +284,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_hobgoblin} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Tipo feerico, sorte de muitos e ajuda como ação bonus com benefícios extras"
-            print(f"Raça escolhida: [{mordenkainen}] Hobgoblin")
 
         case 18:
+            print(f"Raça escolhida: [{mordenkainen}] Kenku")
             ficha["raca"] = "Kenku"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_kenku = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -298,9 +300,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Recordação kenku, imitação de sons e vantagem para duplicar escrita ou objetos"
             ficha["proficiencias"] = "Duas pericias à sua escolha"
-            print(f"Raça escolhida: [{mordenkainen}] Kenku")
 
         case 19:
+            print(f"Raça escolhida: [{mordenkainen}] Kobold")
             ficha["raca"] = "Kobold"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_kobold = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -313,9 +315,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_kobold} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Grito draconico e legado kobold"
-            print(f"Raça escolhida: [{mordenkainen}] Kobold")
 
         case 20:
+            print(f"Raça escolhida: [{mordenkainen}] Povo-Lagarto")
             ficha["raca"] = "Povo-Lagarto"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_povo_lagarto = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -330,9 +332,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["nado"] = "9 m"
             ficha["especialista"] = "Mordida natural, armadura natural, segurar folego e mordida faminta"
             ficha["proficiencias"] = "Duas entre Adestrar Animais, Medicina, Natureza, Percepção, Furtividade ou Sobrevivencia"
-            print(f"Raça escolhida: [{mordenkainen}] Povo-Lagarto")
 
         case 21:
+            print(f"Raça escolhida: [{mordenkainen}] Minotauro")
             ficha["raca"] = "Minotauro"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_minotauro = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -346,9 +348,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Chifres como arma natural, investida com chifres e empurrão com chifres"
             ficha["proficiencias"] = "Uma entre Intimidação ou Persuasão"
-            print(f"Raça escolhida: [{mordenkainen}] Minotauro")
 
         case 22:
+            print(f"Raça escolhida: [{mordenkainen}] Orc")
             ficha["raca"] = "Orc"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_orc = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -361,9 +363,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_orc} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Disparada agressiva, corpo poderoso e resistencia implacavel"
-            print(f"Raça escolhida: [{mordenkainen}] Orc")
-
+            
         case 23:
+            print(f"Raça escolhida: [{mordenkainen}] Satiro")
             ficha["raca"] = "Satiro"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_satiro = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -377,9 +379,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "10,5 m"
             ficha["especialista"] = "Tipo feerico, resistencia magica, saltos alegres e chifres como arma natural"
             ficha["proficiencias"] = "Atuação e Persuasão, além de um instrumento musical"
-            print(f"Raça escolhida: [{mordenkainen}] Satiro")
-
+            
         case 24:
+            print(f"Raça escolhida: [{mordenkainen}] Elfo Marinho")
             ficha["raca"] = "Elfo Marinho"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_elfo_marinho = int(input("Qual a idade de seu personagem? (Max +- 750): "))
@@ -393,9 +395,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["nado"] = "9 m"
             ficha["especialista"] = "Respira ar e agua, resistencia a dano gelido, transe e comunicação limitada com feras aquaticas"
-            print(f"Raça escolhida: [{mordenkainen}] Elfo Marinho")
-
+            
         case 25:
+            print(f"Raça escolhida: [{mordenkainen}] Shadar-kai")
             ficha["raca"] = "Shadar-kai"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_shadar_kai = int(input("Qual a idade de seu personagem? (Max +- 750): "))
@@ -408,9 +410,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_shadar_kai} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Ancestralidade feerica, transe, resistencia necrotica e benção da rainha corvo"
-            print(f"Raça escolhida: [{mordenkainen}] Shadar-kai")
-
+            
         case 26:
+            print(f"Raça escolhida: [{mordenkainen}] Metamorfo")
             ficha["raca"] = "Metamorfo"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_metamorfo = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -436,9 +438,9 @@ def escolher_raca_mordenkainen(ficha):
             else:
                 ficha["SubRaça"] = "Caça Selvagem"
                 ficha["atributo da subRaça"] = "Durante a transformação melhora rastreamento e evita vantagem contra voce"
-            print(f"Raça escolhida: [{mordenkainen}] Metamorfo")
-
+            
         case 27:
+            print(f"Raça escolhida: [{mordenkainen}] Tabaxi")
             ficha["raca"] = "Tabaxi"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_tabaxi = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -453,9 +455,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["escalada"] = "9 m"
             ficha["especialista"] = "Agilidade felina, garras como arma natural e sentidos felinos"
             ficha["proficiencias"] = "Percepção e Furtividade"
-            print(f"Raça escolhida: [{mordenkainen}] Tabaxi")
-
+            
         case 28:
+            print(f"Raça escolhida: [{mordenkainen}] Tortle")
             ficha["raca"] = "Tortle"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_tortle = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -469,9 +471,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Armadura natural, casco defensivo, garras e prender respiração"
             ficha["proficiencias"] = "Sobrevivencia"
-            print(f"Raça escolhida: [{mordenkainen}] Tortle")
-
+            
         case 29:
+            print(f"Raça escolhida: [{mordenkainen}] Tritao")
             ficha["raca"] = "Tritao"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_tritao = int(input("Qual a idade de seu personagem? (Max +- 200): "))
@@ -485,9 +487,9 @@ def escolher_raca_mordenkainen(ficha):
             ficha["deslocamento"] = "9 m"
             ficha["nado"] = "9 m"
             ficha["especialista"] = "Respira ar e agua, resistencia a dano gelido e magias de controle do ar e agua"
-            print(f"Raça escolhida: [{mordenkainen}] Tritao")
-
+            
         case 30:
+            print(f"Raça escolhida: [{mordenkainen}] Yuan-ti")
             ficha["raca"] = "Yuan-ti"
             ficha["atributo da raça"] = "+2 em um atributo e +1 em outro, ou +1 em tres atributos diferentes"
             idade_yuan_ti = int(input("Qual a idade de seu personagem? (Max +- 100): "))
@@ -500,4 +502,3 @@ def escolher_raca_mordenkainen(ficha):
             ficha["peso"] = f"{peso_yuan_ti} kg"
             ficha["deslocamento"] = "9 m"
             ficha["especialista"] = "Resistencia a veneno, vantagem contra veneno, visão no escuro e magia serpentina"
-            print(f"Raça escolhida: [{mordenkainen}] Yuan-ti")
